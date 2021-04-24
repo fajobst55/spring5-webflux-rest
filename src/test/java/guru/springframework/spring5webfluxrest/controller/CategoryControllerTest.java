@@ -86,7 +86,7 @@ public class CategoryControllerTest {
     }
 
     @Test
-    public void testPatchVendorWithChanges() {
+    public void testPatchCategoryWithChanges() {
 
         given(categoryRepository.findById(anyString()))
                 .willReturn(Mono.just(Category.builder().build()));
@@ -107,7 +107,7 @@ public class CategoryControllerTest {
     }
 
     @Test
-    public void testPatchVendorNoChanges() {
+    public void testPatchCategoryNoChanges() {
 
         given(categoryRepository.findById(anyString()))
                 .willReturn(Mono.just(Category.builder().build()));
